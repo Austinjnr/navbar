@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+body {
+  height: 100%;
+  background-color: #000;
+  background-image: url('https://burst.shopifycdn.com/photos/fog-on-dark-waters-edge.jpg?width=1000&format=pjpg&exif=0&iptc=0');
+  background-size: cover;
+  background-position: center;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+a:hover {
+  color: orange;
+}
+/*header*/
+header {
+  position: relative;
+  padding: 0 2rem;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 68px;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.navbar .links {
+  display: flex;
+  column-gap: 2rem;
+  align-items: center;
+}
+.navbar .toggle_btn {
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+.action_btn {
+  background-color: orange;
+  color: #fff;
+  padding: 5px 8px;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+  cursor: pointer;
+}
+.action_btn:hover {
+  scale: 1.1;
+  color: #fff;
+}
+.action_btn:active {
+  scale: 0.98;
+}
+/*responsive design*/
+/* @media(max-width:992px){
+  .navbar .links,
+  .navbar .action_btn {
+    display: none;
+  }
+
+  .navbar .toggle_btn {
+    display: block;
+  }
+} */
