@@ -36,7 +36,15 @@
       </div>
       </div>
     </header>
-
+    <main>
+      <section class="hero">
+        <div class="hero_text">
+          <h1>Austin Dev Creative</h1>
+          <h2>Creative Agency</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi et quasi nisi minus aperiam beatae nobis tempora magni doloremque veritatis, odit ullam debitis delectus? Rem laboriosam necessitatibus quasi perferendis amet!</p>
+        </div>
+      </section>
+    </main>
     <script>
       const toggleBtn = document.querySelector('.toggle_btn')
       const toggleBtnIcon = document.querySelector('.toggle_btn i');
@@ -44,6 +52,11 @@
 
       toggleBtn.onclick = function () {
         dropdownMenu.classList.toggle('open') 
+        const isOpen = dropdownMenu.classList.contains('open')
+
+        toggleBtnIcon.classList = isOpen 
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
       }
       
     </script>
