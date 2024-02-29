@@ -27,14 +27,25 @@
       <div class="toggle_btn">
         <i class="fa-solid fa-bars"></i>
       </div>
-      <!-- <div class="dropdown_menu">
+      <div class="dropdown_menu">
         <li><a href="hero">Home</a></li>
         <li><a href="about">About</a></li>
         <li><a href="services">Services</a></li>
         <li><a href="contact">Contact</a></li>
-        <li><a href="#" class="action_btn">Get Started</a></li>
-      </div> -->
+        <li><a href="#" class="action-btn">Get Started</a></li>
+      </div>
       </div>
     </header>
+
+    <script>
+      const toggleBtn = document.querySelector('.toggle_btn')
+      const toggleBtnIcon = document.querySelector('.toggle_btn i');
+      const dropdownMenu = document.querySelector('.dropdown_menu')
+
+      toggleBtn.onclick = function () {
+        dropdownMenu.classList.toggle('open') 
+      }
+      
+    </script>
   </body>
 </html>
